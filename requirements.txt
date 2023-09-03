@@ -1,0 +1,16 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.13.0+cu117
+numpy==1.23.3
+SentencePiece==0.1.97
+transformers==4.22.2
+vncorenlp==1.0.3
+flask==2.2.2
+flask-sqlalchemy==2.5.1
+SQLAlchemy==1.4 
+tqdm==4.64.0
+tokenizers==0.12.1 
+pyserini
+faiss-gpu
+sqlalchemy
+nltk
+openai

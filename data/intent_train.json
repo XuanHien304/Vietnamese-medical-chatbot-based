@@ -1,0 +1,69 @@
+{"intents": [
+    {"tag": "greeting",
+    "patterns": ["Hi", "Xin chào", "Có ai ở đó không?", "Chào bạn", "Chào buổi sáng", "alo alo", "hello bạn", "mình xin chào"],
+    "responses": ["Xin chào bạn!", "Xin chào, tôi có thể giúp gì được không?", "Chào bạn nhé"],
+    "context_set": [""]
+},
+
+
+{	"tag": "problem_solving",
+    "patterns": ["ad trả lời giúp mình 1 chút","tôi cần giúp đỡ", "giúp tôi", "cho tôi biết", "tôi có một số vấn đề", "vấn đề", "bạn có thể giúp tôi được không?", "cho em hỏi một chút ạ"],
+    "responses": ["vâng tôi có thể giúp bạn", "cho tôi biết tôi có thể giúp gì cho bạn", "tôi có thể giúp gì cho bạn", "bạn cần giúp gì"],
+    "context_set": [""]
+},
+
+{
+    "tag": "booking",
+    "patterns": ["tôi có thể hẹn gặp bác sĩ được không ạ", "cho tôi đặt lịch khám", "cho tôi đặt lịch hẹn khám", "đặt lịch khám cho tôi", "tôi muốn hẹn với bác sĩ", "tôi muốn đặt lịch hẹn khám với bác sĩ"],
+    "responses": ["Dạ bạn cho mình xin họ và tên ạ"],
+    "context_set": [""]
+},
+
+{
+    "tag":"emotional problems",
+    "patterns":["Lo lắng nhiều lúc, cảm thấy tội lỗi nhưng không biết tại sao", "lo lắng", "mệt mỏi do trầm cảm", "cảm thấy căng thẳng", "hồi tưởng và ác mộng", "không quan tâm đến các hoạt động thường xuyên", "ý nghĩ tự tử", "ảo giác", "ảo tưởng", "Thay đổi tâm trạng, tính cách hoặc hành vi", "Khó tập trung hoặc chú ý"],
+    "responses":["bạn có thể đang bị các vấn đề về sức khỏe tinh thần và cảm xúc"],
+    "context_set":[""]
+
+},
+
+{
+    "tag":"COVID-19",
+    "patterns":["Sốt hoặc ớn lạnh, thở gấp","ăn không thấy vị", "Thở gấp hoặc khó thở", "tức ngực, mất vị giác hoặc khứu giác", "ho liên tục, đau nhức người",
+                " bị giảm hoặc mất vị giác hoặc khứu giác", "khó thở hoặc hụt hơi, khó nói hoặc cử động, đau ngực"],
+    "responses":["bạn có thế đang bị Covid-19"],
+    "context_set":[""]
+
+},
+
+{
+    "tag":"common cold",
+    "patterns":["Chảy nước mũi hoặc nghẹt mũi, Đau họng", "Ho", "Đau nhức cơ thể nhẹ hoặc đau đầu nhẹ", 
+                "Hắt xì", "Sốt nhẹ", "đau họng", "nghẹt mũi hoặc chảy nước mũi", "hắt hơi", "ho", "giọng khàn", "nói chung là cảm thấy không khỏe",
+                "tôi cảm thấy nhức đầu nhẹ, đau nhức cơ thể hoặc sốt nhẹ", "tôi thấy đau và mệt mỏi dữ dội, ho khan thường xuyên", "Cảm thấy mệt mỏi trong người, đau nhức cơ thể"],
+    "responses":["bạn có thể bị cảm hoặc sốt thông thường"],
+    "context_set":[""]
+},
+
+
+{
+    "tag":"cardiovascular",
+    "patterns":["đau tim", "nhức tim, đau ngực", "tức ngực", "ngực khó chịu", "khó thở", "nhịp tim nhanh hoặc không đều", "Đau ngực, tức ngực, tức ngực và khó chịu ở ngực (đau thắt ngực) Khó thở",
+                "Đau ở cổ, hàm, cổ họng, vùng bụng trên hoặc lưng. Đau, tê, yếu hoặc lạnh ở chân hoặc tay nếu các mạch máu ở những vùng cơ thể đó bị thu hẹp",
+                "Khó thở Khó thở có thể gặp khi gắng sức, nặng hơn có thể gặp cả khi nghỉ ngơi", "Cảm thấy hoa mắt chóng mặt, Mệt mỏi và buồn ngủ vào ban ngày, khó thở"],
+    "responses":["bạn có thể bị bệnh tim mạch"],
+    "context_set":[""]
+
+},
+
+{
+    "tag":"blood pressure",
+    "patterns":["xuất huyết kết mạc", "chảy máu mũi", "chóng mặt và choáng", "mờ mắt", "hoa mắt", "buồn nôn hoặc buồn ói", "hay nôn hoặc ói", "nhức đầu, hoa mắt, chóng mặt, ù tai, mất ngủ nhẹ",
+                "Nhìn mờ, Chảy máu cam, Khó thở, Đau ngực Chóng mặt, Nhức đầu"],
+    "responses":["bạn có thể đang bị cao huyết áp"],
+    "context_set":[""]
+
+}
+
+]
+}

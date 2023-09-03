@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="icon" href="/static/images/NLI_logo.png" type="image/png">
+    <link rel="stylesheet" href="/static/form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Chatbot</title>
+</head>
+
+<body>
+    <h1>Patient Information Form</h1>
+<form id="ft-form" action="{{ url_for('form') }}" method="post" enctype=multipart/form-data>
+    <fieldset>
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <div class="two-cols">
+        <label>
+          Sex
+          <input type="text" name="sex" required>
+        </label>
+        <label>
+          Phone number
+          <input type="tel" name="phone">
+        </label>
+      </div>
+      <div class="two-cols">
+        <label>
+            Age
+            <input type="text" name="age">
+        </label>
+        <label>
+            Note
+            <input type="text" name="note">
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Appointment request</legend>
+      <div class="two-cols">
+        <label>
+          Datum
+          <input type="date" name="date" required>
+        </label>
+        <div class="inline">
+          <label>
+            <input type="hidden" name="Morning desired" value="no">
+            <input type="checkbox" name="Morning desired" value="yes">
+            Morning
+          </label>
+          <label>
+            <input type="hidden" name="Afternoon desired" value="no">
+            <input type="checkbox" name="Afternoon desired" value="yes">
+            Afternoon
+          </label>
+        </div>
+      </div>
+      <p>Confirmation requested by</p>
+      <div class="inline">
+        <label>
+          <input type="radio" name="Confirmation requested by" value="email" checked>
+          Email
+        </label>
+        <label>
+          <input type="radio" name="Confirmation requested by" value="phone">
+          Phone call
+        </label>
+      </div>
+    </fieldset>
+    <div class="btns">
+      <input type="text" name="_gotcha" value="" style="display:none;">
+      <input type="submit" value="Submit request" id="success">
+    </div>
+  </form>
+  <script>
+    document.getElementById("success").onclick = function () {
+        alert("Form Submission");
+    }
+</script>
+</body>
+</html>
