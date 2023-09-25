@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```
 
 ### Dataset
-For Dataset, you can collect and label as json file similar to /data, for retrieving the answer, database was created using [Pyserini](https://github.com/castorini/pyserini/tree/master)
+For Dataset, you can collect and label as json file similar to /data, for retrieving the answer, the database was created using [Pyserini](https://github.com/castorini/pyserini/tree/master) and sentence-transformers
 
 ## API
 Run app Flask
